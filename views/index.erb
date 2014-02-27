@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Awesome Kickball Super League Yeah</title>
+  <link rel="stylesheet" href="kickball.css">
+</head>
+
+<body>
+  <h1>Find Your Team Yeah!</h1>
+
+  <ul>
+      <% @team_names.each do |team| %>
+        <a href="/<%= team %>"><li><%= team %></li></a>
+      <%end%>
+  </ul>
+</body>

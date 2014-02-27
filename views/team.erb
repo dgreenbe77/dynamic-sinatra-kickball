@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+  <head>
+    <title>Kickball Teams</title>
+    <link rel="stylesheet" href="kickball.css" />
+  </head>
+
+  <body>
+
+    <h1><%= @players[0][3] %></h1>
+
+    <ul>
+      <% @players.each do |player| %>
+        <li><%= "Name: #{player[0]} #{player[1]}, Position: #{player[2]} " %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
